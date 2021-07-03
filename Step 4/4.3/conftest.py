@@ -1,8 +1,8 @@
-import pytest
-import os
-
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options as ChromeOptions
+
+import pytest
+import os
 
 
 def pytest_addoption(parser):

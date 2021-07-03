@@ -3,8 +3,8 @@ from selenium.common.exceptions import NoAlertPresentException
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from section_2.pages.locators import BasePageLocators
-from section_2.pages.locators import MainPageLocators
+from .locators import BasePageLocators
+from .locators import MainPageLocators
 
 import math
 
@@ -17,7 +17,7 @@ class BasePage:
 
     def open(self):
         self.browser.get(self.url)
-        
+
     def go_to_login_page(self):
         link = self.browser.find_element(*BasePageLocators.LOGIN_LINK_INVALID)
         link.click()

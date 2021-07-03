@@ -1,6 +1,6 @@
-from section_2.pages.base_page import BasePage
-from section_2.pages.locators import BasePageLocators
-from section_2.pages.locators import MainPageLocators
+from .base_page import BasePage
+from .locators import BasePageLocators
+from .locators import MainPageLocators
 
 
 class MainPage(BasePage):
@@ -28,5 +28,3 @@ class MainPage(BasePage):
 
     def we_expect_that_the_basket_has_a_text_about_the_absence_of_goods(self):
         self.is_element_present(*MainPageLocators.TEXT_ABOUT_THE_MISSING)
-
-

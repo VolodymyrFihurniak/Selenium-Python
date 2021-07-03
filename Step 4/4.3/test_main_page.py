@@ -1,5 +1,5 @@
-from section_2.pages.main_page import MainPage
-from section_2.pages.login_page import LoginPage
+from pages.main_page import MainPage
+from pages.login_page import LoginPage
 
 import pytest
 

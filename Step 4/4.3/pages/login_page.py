@@ -1,6 +1,6 @@
-from section_2.pages.base_page import BasePage
-from section_2.pages.locators import MainPageLocators
-from section_2.pages.locators import LoginAndRegisterPageLocators
+from .base_page import BasePage
+from .locators import MainPageLocators
+from .locators import LoginAndRegisterPageLocators
 
 
 class LoginPage(BasePage, MainPageLocators):
