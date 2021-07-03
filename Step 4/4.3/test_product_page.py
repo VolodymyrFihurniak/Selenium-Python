@@ -38,7 +38,7 @@ class TestUserAddToBasketFromProductPage:
         page.register_new_user(str(time.time()) + '@gmail.com', 'FatRat131#!4')
 
     @pytest.mark.need_review
-    def test_user_can_add_product_to_basket(self):
+    def test_guest_can_add_product_to_basket(self):
         link = 'http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209/?promo=newYear'
         page = ProductPage(self.browser, link)
         page.open()
@@ -57,7 +57,7 @@ class TestUserAddToBasketFromProductPage:
                                            "/?promo=offer7", marks=pytest.mark.xfail),
                               "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer8",
                               "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer9"])
-    def test_user_can_add_product_to_basket(self, link):
+    def test_guest_can_add_product_to_basket(self, link):
         page = ProductPage(self.browser, link)
         page.open()
         page.add_to_cart()
